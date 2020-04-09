@@ -21,6 +21,9 @@
 - MMDD七隈線西行朝.csv
 - MMDD七隈線西行夕.csv
 
+
+文字コードはUTF-8です。
+
 次のようなURLでアクセスすることができます。
 https://raw.githubusercontent.com/kuwayamamasayuki/konzatsu/master/CSV/0309空港線東行朝.csv
 
