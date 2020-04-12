@@ -3,6 +3,7 @@
 # 福岡市地下鉄の「ラッシュ時の社内混雑状況の公表について」の前日のデータを取得し，CSVデータ化するプログラム。
 # 2020/03/09以降のデータに対応している。
 
+import argparse
 import re
 import sys
 import urllib.parse
@@ -815,8 +816,15 @@ def output(cells, day, rosen, houmen, time):
                 f.write(',')
             f.write('\n')
 
-yesterday = datetime.today() - timedelta(days=1)
-MonthDay = datetime.strftime(yesterday, '%m%d')
+parser = argparse.ArgumentParser()
+parser.add_argument('day', help='target day')
+args = parser.parse_args()
+
+if args.day:
+    MonthDay = args.day
+else:
+    yesterday = datetime.today() - timedelta(days=1)
+    MonthDay = datetime.strftime(yesterday, '%m%d')
 
 
 for url in urls:
