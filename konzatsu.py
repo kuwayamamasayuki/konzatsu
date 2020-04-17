@@ -817,14 +817,14 @@ def output(cells, day, rosen, houmen, time):
             f.write('\n')
 
 parser = argparse.ArgumentParser()
-parser.add_argument('day', help='target day')
+parser.add_argument('day', help='target day', default='0000')
 args = parser.parse_args()
 
-if args.day:
-    MonthDay = args.day
-else:
+if args.day == '0000':
     yesterday = datetime.today() - timedelta(days=1)
     MonthDay = datetime.strftime(yesterday, '%m%d')
+else:
+    MonthDay = args.day
 
 
 for url in urls:
