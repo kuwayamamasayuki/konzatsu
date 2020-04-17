@@ -817,7 +817,7 @@ def output(cells, day, rosen, houmen, time):
             f.write('\n')
 
 parser = argparse.ArgumentParser()
-parser.add_argument('day', help='target day', default='0000')
+parser.add_argument('day', help='target day', nargs='?', default='0000')
 args = parser.parse_args()
 
 if args.day == '0000':
