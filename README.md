@@ -39,6 +39,7 @@ https://raw.githubusercontent.com/kuwayamamasayuki/konzatsu/master/CSV/0309空�
 ## その他のファイル
 以下のファイルも用意しました。
 
+- csv-file-list.csv　各月日のCSVファイル名の月日の部分を除いたものです（空港線東行朝.csv，空港線東行夕.csv，…）
 - day-list.csv	データがある日付の一覧です。
 - rosen-houmen.csv	路線（空港線，箱崎線，七隈線）と方面（東行／北行，西行／南行）とを組み合わせた一覧です。
 - jikantai.csv	朝と夕です。
